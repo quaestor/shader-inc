@@ -2,8 +2,16 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+
+#ifdef __APPLE__
 #include <OpenGL/gl.h>
 #include <OpenGL/OpenGL.h>
+#endif
+
+#ifdef __linux__
+#include <GL/gl.h>
+#endif
+
 #include <SDL/SDL.h>
 
 #define WIDTH 640
