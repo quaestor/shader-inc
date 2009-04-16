@@ -3,8 +3,7 @@
 #include <string.h>
 #include <math.h>
 #include <OpenGL/gl.h>
-
-#include "SDL.h"
+#include <SDL/SDL.h>
 
 #define WIDTH 640
 #define HEIGHT 480
@@ -35,7 +34,7 @@ static void printAttributes() {
     int nAttr;
     int i;
     
-    int  attr[] = { SDL_GL_RED_SIZE, SDL_GL_BLUE_SIZE, SDL_GL_GREEN_SIZE,
+    int attr[] = { SDL_GL_RED_SIZE, SDL_GL_BLUE_SIZE, SDL_GL_GREEN_SIZE,
                     SDL_GL_ALPHA_SIZE, SDL_GL_BUFFER_SIZE, SDL_GL_DEPTH_SIZE };
                     
     char * desc[] = { "Red size: %d bits\n", "Blue size: %d bits\n", "Green size: %d bits\n",
@@ -62,8 +61,7 @@ static void createSurface(int fullscreen) {
     // Create window
     gScreen = SDL_SetVideoMode(WIDTH, HEIGHT, 0, flags);
     if(gScreen == NULL) {
-        fprintf(stderr, "Couldn't set %dx%d OpenGL video mode: %s\n",
-                 WIDTH, HEIGHT, SDL_GetError());
+        fprintf(stderr, "Couldn't set %dx%d OpenGL video mode: %s\n", WIDTH, HEIGHT, SDL_GetError());
 		SDL_Quit();
 		exit(EXIT_FAILURE);
 	}
@@ -125,5 +123,5 @@ int main(int argc, char ** argv) {
     // Cleanup
 	SDL_Quit();
 	
-    return 0;
+    return EXIT_SUCCESS;
 }
