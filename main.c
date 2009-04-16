@@ -65,7 +65,7 @@ static void createSurface(int fullscreen) {
         fprintf(stderr, "Couldn't set %dx%d OpenGL video mode: %s\n",
                  WIDTH, HEIGHT, SDL_GetError());
 		SDL_Quit();
-		exit(2);
+		exit(EXIT_FAILURE);
 	}
 }
 
@@ -99,7 +99,7 @@ static void mainLoop() {
 					break;
 			}
 		}
-    
+
         drawGL();
         SDL_GL_SwapBuffers();
 	}
@@ -108,9 +108,8 @@ static void mainLoop() {
 int main(int argc, char ** argv) {
 	// Init SDL video subsystem
 	if(SDL_Init(SDL_INIT_VIDEO) < 0) {
-        fprintf(stderr, "Couldn't initialize SDL: %s\n",
-			SDL_GetError());
-		exit(1);
+        fprintf(stderr, "Couldn't initialize SDL: %s\n", SDL_GetError());
+		exit(EXIT_FAILURE);
 	}
 
     // Set GL context attributes
