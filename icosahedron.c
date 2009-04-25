@@ -7,8 +7,6 @@
  *
  */
 
-#include <OpenGL/gl.h>
-
 #include "vectorOps.h"
 #include "icosahedron.h"
 

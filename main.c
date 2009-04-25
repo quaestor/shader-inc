@@ -2,13 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-#include <sys/time.h>
-
-#include "vectorOps.h"
-#include "triangle3d.h"
-#include "icosahedron.h"
-#include "shaderFunctions.h"
-#include "misc.h"
 
 #ifdef __APPLE__
 #include <OpenGL/gl.h>
@@ -16,10 +9,17 @@
 #endif
 
 #ifdef __linux__
+#include <GL/glew.h>
 #include <GL/gl.h>
 #endif
 
 #include <SDL/SDL.h>
+
+#include "vectorOps.h"
+#include "triangle3d.h"
+#include "icosahedron.h"
+#include "shaderFunctions.h"
+#include "misc.h"
 
 #define WIDTH 640
 #define HEIGHT 480
