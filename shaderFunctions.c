@@ -17,10 +17,10 @@ GLchar * readGLSL(char * path) {
 	
 	int count = 0;
 	
-	if (path != NULL) {
+	if(path != NULL) {
 		fp = fopen(path, "rt");
 		
-		if (fp != NULL) {
+		if(fp != NULL) {
 			fseek(fp, 0, SEEK_END);
 			count = ftell(fp);
 			rewind(fp);
@@ -32,6 +32,9 @@ GLchar * readGLSL(char * path) {
 			}
 			fclose(fp);
 			
+		}
+		else {
+			perror("shader-inc: fopen()");
 		}
 	}
 	
