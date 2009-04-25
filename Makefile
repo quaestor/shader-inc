@@ -1,9 +1,9 @@
-flags = -Wall
+flags = -Wall -std=c99
 
 headers = $(wildcard *.h)
 impls = $(wildcard *.c)
 
-frameworks = -lGL -lGLEW -lSDL
+frameworks = -lGL -lGLEW -lSDL -lm
 
 all: shader-inc
 
