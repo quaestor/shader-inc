@@ -3,7 +3,6 @@
  *  Isokaeder
  *
  *  Created by Christoph on 3/25/09.
- *  Copyright 2009 Christoph Rauch
  *
  */
 
@@ -22,20 +21,3 @@ void main()
 	color.a = color.b;
 	gl_FragColor = color / (radius * 2. + 2.);
 }
-
-/* LAS BLUR */
-/*
-uniform float radius;
-uniform sampler2D image;
-void main() {
-	vec4 m = texture2D(image, gl_TexCoord[0].xy);
-	vec2 n;
-	for(int i = 0; i < 8; i++) {
-		float j = float(i);
-		n.x = cos(j * 0.75);
-		n.y = sin(j * 0.75);
-		m += texture2D(image, gl_TexCoord[0].xy + radius * n);
-	}
-	gl_FragColor = m / 8.0;
-}
-*/

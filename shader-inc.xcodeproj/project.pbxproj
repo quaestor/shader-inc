@@ -12,14 +12,14 @@
 		002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F3A2C09D0888800EBEB88 /* SDLMain.m */; };
 		002F3A3F09D088BA00EBEB88 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 002F3A3E09D088BA00EBEB88 /* main.c */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		9C4499C70FA33A44002C4A3B /* generic.vs in Resources */ = {isa = PBXBuildFile; fileRef = 9C4499C30FA33A44002C4A3B /* generic.vs */; };
+		9C4499C80FA33A44002C4A3B /* blurV.fs in Resources */ = {isa = PBXBuildFile; fileRef = 9C4499C40FA33A44002C4A3B /* blurV.fs */; };
+		9C4499C90FA33A44002C4A3B /* blur.fs in Resources */ = {isa = PBXBuildFile; fileRef = 9C4499C50FA33A44002C4A3B /* blur.fs */; };
+		9C4499CA0FA33A44002C4A3B /* combine.fs in Resources */ = {isa = PBXBuildFile; fileRef = 9C4499C60FA33A44002C4A3B /* combine.fs */; };
+		9C4499DC0FA33AA0002C4A3B /* icosahedron.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C4499D80FA33AA0002C4A3B /* icosahedron.c */; };
+		9C4499DD0FA33AA0002C4A3B /* triangle3d.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C4499D90FA33AA0002C4A3B /* triangle3d.c */; };
 		9C7EF6C30F97C9D6006DC851 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7EF6C20F97C9D6006DC851 /* Cocoa.framework */; };
-		9C88F9580FA236EC004B7F5D /* generic.vs in Resources */ = {isa = PBXBuildFile; fileRef = 9C88F9540FA236EC004B7F5D /* generic.vs */; };
-		9C88F9590FA236EC004B7F5D /* blur.fs in Resources */ = {isa = PBXBuildFile; fileRef = 9C88F9550FA236EC004B7F5D /* blur.fs */; };
-		9C88F95A0FA236EC004B7F5D /* combine.fs in Resources */ = {isa = PBXBuildFile; fileRef = 9C88F9560FA236EC004B7F5D /* combine.fs */; };
-		9C88F95B0FA236EC004B7F5D /* blurV.fs in Resources */ = {isa = PBXBuildFile; fileRef = 9C88F9570FA236EC004B7F5D /* blurV.fs */; };
 		9C88F95F0FA2378D004B7F5D /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C88F95E0FA2378D004B7F5D /* misc.c */; };
-		9C88F97C0FA245BC004B7F5D /* icosahedron.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C88F9790FA245BC004B7F5D /* icosahedron.c */; };
-		9C88F97D0FA245BC004B7F5D /* triangle3d.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C88F97B0FA245BC004B7F5D /* triangle3d.c */; };
 		9CFE45610F93ECC8006F7093 /* vectorOps.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE455E0F93ECC8006F7093 /* vectorOps.c */; };
 		9CFE45620F93ECC8006F7093 /* shaderFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE45600F93ECC8006F7093 /* shaderFunctions.c */; };
 		9CFE463C0F93EF7A006F7093 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFE463B0F93EF7A006F7093 /* OpenGL.framework */; };
@@ -48,17 +48,17 @@
 		32CA4F630368D1EE00C91783 /* shader-inc_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "shader-inc_Prefix.pch"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* shader-inc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shader-inc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C4499C30FA33A44002C4A3B /* generic.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = generic.vs; sourceTree = "<group>"; };
+		9C4499C40FA33A44002C4A3B /* blurV.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = blurV.fs; sourceTree = "<group>"; };
+		9C4499C50FA33A44002C4A3B /* blur.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = blur.fs; sourceTree = "<group>"; };
+		9C4499C60FA33A44002C4A3B /* combine.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = combine.fs; sourceTree = "<group>"; };
+		9C4499D80FA33AA0002C4A3B /* icosahedron.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = icosahedron.c; sourceTree = "<group>"; };
+		9C4499D90FA33AA0002C4A3B /* triangle3d.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = triangle3d.c; sourceTree = "<group>"; };
+		9C4499DA0FA33AA0002C4A3B /* icosahedron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = icosahedron.h; sourceTree = "<group>"; };
+		9C4499DB0FA33AA0002C4A3B /* triangle3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = triangle3d.h; sourceTree = "<group>"; };
 		9C7EF6C20F97C9D6006DC851 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		9C88F9540FA236EC004B7F5D /* generic.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = generic.vs; path = ../c/Ikosaeder/generic.vs; sourceTree = SOURCE_ROOT; };
-		9C88F9550FA236EC004B7F5D /* blur.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = blur.fs; path = ../c/Ikosaeder/blur.fs; sourceTree = SOURCE_ROOT; };
-		9C88F9560FA236EC004B7F5D /* combine.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = combine.fs; path = ../c/Ikosaeder/combine.fs; sourceTree = SOURCE_ROOT; };
-		9C88F9570FA236EC004B7F5D /* blurV.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = blurV.fs; path = ../c/Ikosaeder/blurV.fs; sourceTree = SOURCE_ROOT; };
 		9C88F95D0FA2378D004B7F5D /* misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = "<group>"; };
 		9C88F95E0FA2378D004B7F5D /* misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = misc.c; sourceTree = "<group>"; };
-		9C88F9780FA245BC004B7F5D /* icosahedron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = icosahedron.h; path = ../c/Ikosaeder/icosahedron.h; sourceTree = SOURCE_ROOT; };
-		9C88F9790FA245BC004B7F5D /* icosahedron.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = icosahedron.c; path = ../c/Ikosaeder/icosahedron.c; sourceTree = SOURCE_ROOT; };
-		9C88F97A0FA245BC004B7F5D /* triangle3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = triangle3d.h; path = ../c/Ikosaeder/triangle3d.h; sourceTree = SOURCE_ROOT; };
-		9C88F97B0FA245BC004B7F5D /* triangle3d.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = triangle3d.c; path = ../c/Ikosaeder/triangle3d.c; sourceTree = SOURCE_ROOT; };
 		9CFE455D0F93ECC8006F7093 /* vectorOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vectorOps.h; sourceTree = "<group>"; };
 		9CFE455E0F93ECC8006F7093 /* vectorOps.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vectorOps.c; sourceTree = "<group>"; };
 		9CFE455F0F93ECC8006F7093 /* shaderFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shaderFunctions.h; sourceTree = "<group>"; };
@@ -134,8 +134,8 @@
 				9CFE455E0F93ECC8006F7093 /* vectorOps.c */,
 				9CFE45600F93ECC8006F7093 /* shaderFunctions.c */,
 				32CA4F630368D1EE00C91783 /* shader-inc_Prefix.pch */,
-				9C88F9790FA245BC004B7F5D /* icosahedron.c */,
-				9C88F97B0FA245BC004B7F5D /* triangle3d.c */,
+				9C4499D80FA33AA0002C4A3B /* icosahedron.c */,
+				9C4499D90FA33AA0002C4A3B /* triangle3d.c */,
 				002F3A3E09D088BA00EBEB88 /* main.c */,
 				9C88F95E0FA2378D004B7F5D /* misc.c */,
 			);
@@ -145,10 +145,10 @@
 		29B97317FDCFA39411CA2CEA /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
-				9C88F9540FA236EC004B7F5D /* generic.vs */,
-				9C88F9550FA236EC004B7F5D /* blur.fs */,
-				9C88F9560FA236EC004B7F5D /* combine.fs */,
-				9C88F9570FA236EC004B7F5D /* blurV.fs */,
+				9C4499C30FA33A44002C4A3B /* generic.vs */,
+				9C4499C40FA33A44002C4A3B /* blurV.fs */,
+				9C4499C50FA33A44002C4A3B /* blur.fs */,
+				9C4499C60FA33A44002C4A3B /* combine.fs */,
 			);
 			name = Shaders;
 			sourceTree = SOURCE_ROOT;
@@ -174,8 +174,8 @@
 		9CFE46160F93ED7A006F7093 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				9C88F9780FA245BC004B7F5D /* icosahedron.h */,
-				9C88F97A0FA245BC004B7F5D /* triangle3d.h */,
+				9C4499DA0FA33AA0002C4A3B /* icosahedron.h */,
+				9C4499DB0FA33AA0002C4A3B /* triangle3d.h */,
 				9C88F95D0FA2378D004B7F5D /* misc.h */,
 				9CFE455D0F93ECC8006F7093 /* vectorOps.h */,
 				9CFE455F0F93ECC8006F7093 /* shaderFunctions.h */,
@@ -228,10 +228,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				9C88F9580FA236EC004B7F5D /* generic.vs in Resources */,
-				9C88F9590FA236EC004B7F5D /* blur.fs in Resources */,
-				9C88F95A0FA236EC004B7F5D /* combine.fs in Resources */,
-				9C88F95B0FA236EC004B7F5D /* blurV.fs in Resources */,
+				9C4499C70FA33A44002C4A3B /* generic.vs in Resources */,
+				9C4499C80FA33A44002C4A3B /* blurV.fs in Resources */,
+				9C4499C90FA33A44002C4A3B /* blur.fs in Resources */,
+				9C4499CA0FA33A44002C4A3B /* combine.fs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,8 +247,8 @@
 				9CFE45610F93ECC8006F7093 /* vectorOps.c in Sources */,
 				9CFE45620F93ECC8006F7093 /* shaderFunctions.c in Sources */,
 				9C88F95F0FA2378D004B7F5D /* misc.c in Sources */,
-				9C88F97C0FA245BC004B7F5D /* icosahedron.c in Sources */,
-				9C88F97D0FA245BC004B7F5D /* triangle3d.c in Sources */,
+				9C4499DC0FA33AA0002C4A3B /* icosahedron.c in Sources */,
+				9C4499DD0FA33AA0002C4A3B /* triangle3d.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
