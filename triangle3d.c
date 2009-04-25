@@ -3,7 +3,6 @@
  *  Isokaeder
  *
  *  Created by Christoph on 3/25/09.
- *  
  *
  */
 
