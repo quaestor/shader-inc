@@ -12,8 +12,8 @@
 		002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F3A2C09D0888800EBEB88 /* SDLMain.m */; };
 		002F3A3F09D088BA00EBEB88 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 002F3A3E09D088BA00EBEB88 /* main.c */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		9C39A1E50FAE4E9700454057 /* light.vert in Resources */ = {isa = PBXBuildFile; fileRef = 9C39A1E30FAE4E9700454057 /* light.vert */; };
-		9C39A1E60FAE4E9700454057 /* light.frag in Resources */ = {isa = PBXBuildFile; fileRef = 9C39A1E40FAE4E9700454057 /* light.frag */; };
+		9C39A1E50FAE4E9700454057 /* basic.vert in Resources */ = {isa = PBXBuildFile; fileRef = 9C39A1E30FAE4E9700454057 /* basic.vert */; };
+		9C39A1E60FAE4E9700454057 /* basic.frag in Resources */ = {isa = PBXBuildFile; fileRef = 9C39A1E40FAE4E9700454057 /* basic.frag */; };
 		9C7EF6C30F97C9D6006DC851 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7EF6C20F97C9D6006DC851 /* Cocoa.framework */; };
 		9CFE45610F93ECC8006F7093 /* vectorOps.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE455E0F93ECC8006F7093 /* vectorOps.c */; };
 		9CFE45620F93ECC8006F7093 /* shaderFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE45600F93ECC8006F7093 /* shaderFunctions.c */; };
@@ -43,8 +43,8 @@
 		32CA4F630368D1EE00C91783 /* shader-inc_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "shader-inc_Prefix.pch"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* shader-inc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shader-inc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C39A1E30FAE4E9700454057 /* light.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = light.vert; sourceTree = "<group>"; };
-		9C39A1E40FAE4E9700454057 /* light.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = light.frag; sourceTree = "<group>"; };
+		9C39A1E30FAE4E9700454057 /* basic.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = basic.vert; sourceTree = "<group>"; };
+		9C39A1E40FAE4E9700454057 /* basic.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = basic.frag; sourceTree = "<group>"; };
 		9C7EF6C20F97C9D6006DC851 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		9CFE455D0F93ECC8006F7093 /* vectorOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vectorOps.h; sourceTree = "<group>"; };
 		9CFE455E0F93ECC8006F7093 /* vectorOps.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vectorOps.c; sourceTree = "<group>"; };
@@ -147,8 +147,8 @@
 		9C39A1E80FAE4E9A00454057 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
-				9C39A1E30FAE4E9700454057 /* light.vert */,
-				9C39A1E40FAE4E9700454057 /* light.frag */,
+				9C39A1E30FAE4E9700454057 /* basic.vert */,
+				9C39A1E40FAE4E9700454057 /* basic.frag */,
 			);
 			name = Shaders;
 			sourceTree = "<group>";
@@ -207,8 +207,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				9C39A1E50FAE4E9700454057 /* light.vert in Resources */,
-				9C39A1E60FAE4E9700454057 /* light.frag in Resources */,
+				9C39A1E50FAE4E9700454057 /* basic.vert in Resources */,
+				9C39A1E60FAE4E9700454057 /* basic.frag in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

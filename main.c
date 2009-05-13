@@ -9,15 +9,19 @@
 #endif
 
 #ifdef __linux__
+#include <GL/glew.h>
 #include <GL/gl.h>
 #endif
 
 #include <SDL/SDL.h>
 
+#include "shaderFunctions.h"
+
 #define WIDTH 640
 #define HEIGHT 480
 
 static SDL_Surface * gScreen;
+static GLuint shader;
 
 static void initAttributes() {
     // Don't set color bit sizes (SDL_GL_RED_SIZE, etc)
@@ -74,10 +78,20 @@ static void createSurface(int fullscreen) {
 static void initGL() {
 	glClearColor(0.0f, 0.0f, 0.0f, 0.5f);
 	glClearDepth(1.0f);
+	GLchar * vertex = readGLSL("basic.vert");
+	GLchar * fragment = readGLSL("basic.frag");
+	
+	shader = makeProgram(vertex, fragment, NULL);
+	glUseProgram(shader);
 }
 
 static void drawGL() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glBegin(GL_TRIANGLES);
+	glVertex3f(-0.5f, -0.5f, 0.0f);
+	glVertex3f( 0.0f,  0.5f, 0.0f);
+	glVertex3f( 0.5f,  0.0f, 0.5f);
+	glEnd();
 }
 
 static void mainLoop() {

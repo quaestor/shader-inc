@@ -11,7 +11,7 @@
 
 #include "shaderFunctions.h"
 
-GLchar * readGLSL(char * path) {
+GLchar * readGLSL(const char * path) {
 	FILE * fp;
 	char * content = NULL;
 	
@@ -88,7 +88,7 @@ GLuint makeProgram(GLchar * v, GLchar * f, GLchar * g) {
 	if(geometry) glCompileShader(geometry);
 	
 	
-#ifdef DEBUG
+//#ifdef DEBUG
 	if(vertex) {
 		printf("\t> Vertex Shader Info:");
 		printShaderInfo(vertex);
@@ -101,7 +101,7 @@ GLuint makeProgram(GLchar * v, GLchar * f, GLchar * g) {
 		printf("\t> Geometry Shader Info:");
 		printShaderInfo(geometry);
 	}
-#endif
+//#endif
 	
     program = glCreateProgram();
 	

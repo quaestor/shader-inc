@@ -14,7 +14,7 @@
 #include <GL/gl.h>
 #endif
 
-GLchar * readGLSL(char *);
+GLchar * readGLSL(const char *);
 GLvoid printShaderInfo(GLuint);
 GLvoid printProgramInfo(GLuint);
 GLuint makeProgram(GLchar *, GLchar *, GLchar *);

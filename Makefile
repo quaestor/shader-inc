@@ -1,4 +1,4 @@
-flags = -Wall
+flags = -Wall -std=c99
 
 headers = $(wildcard *.h)
 impls = $(wildcard *.c)
