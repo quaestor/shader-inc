@@ -132,6 +132,21 @@ int main(int argc, char ** argv) {
     initAttributes();    
     // Create GL context
     createSurface(0);
+#ifdef __linux__
+    //Init glew
+    if(glewInit() != GLEW_OK) {
+      printf("Glew init error\n");
+      exit(EXIT_FAILURE);
+    }
+
+    // Check extensions
+    if (GLEW_ARB_vertex_shader && GLEW_ARB_fragment_shader) {
+      printf("Ready for GLSL\n");
+    else {
+      printf("No GLSL support\n");
+      exit(EXIT_FAILURE);
+    }
+#endif
     // Get GL context attributes
     printAttributes();
     // Init GL state
